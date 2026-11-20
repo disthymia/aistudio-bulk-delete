@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "AI Studio Multi-Prompt Delete",
+  "version": "1.0.0",
+  "description": "Adds multi-select checkboxes and bulk deletion for Google AI Studio prompts and chat turns.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://aistudio.google.com/*"
+      ],
+      "css": ["styles.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
